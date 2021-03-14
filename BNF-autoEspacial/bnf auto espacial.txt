@@ -1,0 +1,68 @@
+<proyecto>::- <autoLunar>
+
+<autoLunar>::- <instrucciones> | <autoLunar><instrucciones> 
+
+<instrucciones> ::- <declarar_variable>|<ruedas> | <brazos> |  <camara> | <desplazamiento>
+
+<declarar_variable>::- <nombre_variable>' as '<tipo_dato>'='<valor>| <nombre_variable>' as '<tipo_dato>
+<nombre_variable>::- <cadena>
+<cadena>::- <letras>|<letras><numeros>
+<letras>::- <mayusculas>|<minusculas>
+<mayusculas>::- ' A'| 'B '| 'C '| ' D'| ' E'| ' F'| 'G '| ' H'| 'I '| ' J' |' K'| 'L '| 'M '| ' N'| Ñ' '|' O'| ' P'| ' Q'| ' R'| ' S'| 'T '| 'U '| 'V '| 'W '| ' X'| 'Y
+'| ' Z'
+<minusculas>::- ' a'| 'b '| 'c '| ' d'| ' e'| ' f'| 'g '| ' h'| 'i '| ' j' |' k'| 'l '| 'm '| ' n'| ñ' '|' o'| ' p'| ' q'| ' r'| ' s'|'t'|'u'|'v'|'w'|'x'|'y'|'z'
+<numeros>::- <signo><digitos>
+<signo>::- '-'|'+'
+<digitos>::- '0'|<numero_validos>
+<numero_validos>::-'1 '|' 2'|' 3'|'4 '|' 5'|' 6'|' 7'|' 8'|' 9'
+<tipo_dato>::-<caracter>|<cadena>|<entero>|<decimales>|<booleano>
+<entero>::-<numeros>
+<booleano>::-<true>|<false>
+<decimales>::-<signo><digito>' . '<digito>
+<caracter>::-'!'|'@'|'%'|'&'|'*'|'('|')'|'{'|'_'|'}'|'['|']'|':'|';'|'<'|'>'|'?'|<mayusculas>|<minusculas>
+
+<ruedas>::- <girar> | <avanza>  
+<girar>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "derecha" | "izquierda" | <Operador><OperadorBool><Operando>
+<Operador>::- <grados> 
+<grados>::- <70izq> | <70der> | <140total> 
+
+<avanza>::- <adelante> | <retrocede> | <detenerse>
+
+<adelante>::- <ganaVelocidad> | <ganaVelocidad><adelante><ganaVelocidad>
+<ganaVelocidad>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "siAvanza" | "noAavanza"| 
+
+
+<retrocede>::- <pierdeVelocidad> | <pierdeVelocidad><atras><pierdeVelocidad>
+<pierdeVelocidad>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "siRetrocede" | "noRetrocede"| 
+
+<detenerse>::- <sinVelocidad> | <sinVelocidad><detenerse><sinVelocidad>
+<sinVelocidad>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "estaDetenido" | "noEstaDetenido"|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
