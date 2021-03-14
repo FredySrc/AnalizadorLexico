@@ -1,0 +1,51 @@
+<proyecto>::- <autoLunar>
+
+<autoLunar>::- <isntrucciones> | <autoLunar><instrucciones> 
+
+<isntrucciones> ::- <ruedas> | <brazos> |  <camara> | <desplazamiento>
+
+<ruedas>::- <girar> | <avanza>  
+<girar>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "derecha" | "izquierda" | <Operador><OperadorBool><Operando>
+<Operador>::- <grados> 
+<grados>::- <70izq> | <70der> | <140total> 
+
+<avanza>::- <adelante> | <retrocede> | <detenerse>
+
+<adelante>::- <ganaVelocidad> | <ganaVelocidad><adelante><ganaVelocidad>
+<ganaVelocidad>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "siAvanza" | "noAavanza"| 
+
+
+<retrocede>::- <pierdeVelocidad> | <pierdeVelocidad><atras><pierdeVelocidad>
+<pierdeVelocidad>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "siRetrocede" | "noRetrocede"| 
+
+<detenerse>::- <sinVelocidad> | <sinVelocidad><detenerse><sinVelocidad>
+<sinVelocidad>::- (<Booleano>)
+<Booleano>::- "1" | "0" | "estaDetenido" | "noEstaDetenido"|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
