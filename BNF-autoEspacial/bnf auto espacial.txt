@@ -42,6 +42,11 @@
 <sinVelocidad>::- (<Booleano>)
 <Booleano>::- "1" | "0" | "estaDetenido" | "noEstaDetenido"|
 
+<brazos>  ::- <sujectar> | <empujar>
+<sujectar>::- (<Booleano>)
+<empujar>::- (<Booleano>)
+<Boleano>::- "0" |  "1"  | "siSujecta"  |  "noSujecta"  |  "siEmpuja"  |  "noEmpuja"
+
 
 
 
