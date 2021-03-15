@@ -48,6 +48,20 @@
 <Boleano>::- "0" |  "1"  | "siSujecta"  |  "noSujecta"  |  "siEmpuja"  |  "noEmpuja"
 
 
+<camara>::- <tomarFoto>
+<tomarFoto>::- si<seleccionHecha>"==""1" | <seleccionHecha>=="siCapturar"  entonces <tomarParametros> 
+<operadoresRelacionales>::-  = | <> | < | > | <= | >= | == 
+<SeleccionHecha>::- "1" | "0" | "siCapturar" | "noCapturar"
+<tomarParametros>::- <extensionPedestal><anguloGiro><anguloInclinacion>
+<extensionPedestal>::- <numeroRacionalPositivo>"<="100
+<numeroRacionalPositivo>::- <enteroPositivo>/<enteroPositivo>
+<enteroPositivo>::- <numero_validos> | <enteroPositivo><numero_validos>
+<entero>::- <signo><numero_validos> | <entero><numero_validos>
+<signo>::- "+" | "-" | "E"
+<numeroRacional>::- <entero>/<entero>
+<anguloGiro>::- <numeroRacionalPositivo>"<="360
+<anguloInclinacion>::- <numeroRacional>"<="45 | <numeroRacional>">="-45 
+
 
 
 
