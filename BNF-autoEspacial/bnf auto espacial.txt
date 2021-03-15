@@ -62,8 +62,14 @@
 <anguloGiro>::- <numeroRacionalPositivo>"<="360
 <anguloInclinacion>::- <numeroRacional>"<="45 | <numeroRacional>">="-45 
 
+<dezplazar>::- <lado> | <direccion>
+<lado>::- si<seleccionHecha>"==""1" | <seleccionHecha>=="Pasoderecha"  entonces <tomarParametros> 
+<operadoresRelacionales>::-  = | <> | < | > | <= | >= | == 
+<SeleccionHecha>::- "1" | "0" | "Pasoderecha" | "Pasoizquirda"
 
-
+<direccion>::- si<selecciondedireccion>"==""1" | <selecciondedireccion>=="Pasoadelante"  entonces <tomarParametros> 
+<operadoresRelacionales>::-  = | <> | < | > | <= | >= | == 
+<SeleccionHecha>::- "1" | "0" | "pasoadelante" | "Pasoatras"
 
 
 
