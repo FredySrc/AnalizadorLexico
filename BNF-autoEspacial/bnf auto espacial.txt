@@ -34,6 +34,11 @@
 <ganaVelocidad>::- (<Booleano>)
 <Booleano>::- "1" | "0" | "siAvanza" | "noAavanza"| 
 
+<dezplazar>::- <lado> | <direccion>
+<lado>::- si<seleccionHecha>"==""1" | <seleccionHecha>=="Pasoderecha"  entonces <tomarParametros> 
+<operadoresRelacionales>::-  = | <> | < | > | <= | >= | == 
+<SeleccionHecha>::- "1" | "0" | "Pasoderecha" | "Pasoizquirda"
+
 
 <retrocede>::- <pierdeVelocidad> | <pierdeVelocidad><atras><pierdeVelocidad>
 <pierdeVelocidad>::- (<Booleano>)
