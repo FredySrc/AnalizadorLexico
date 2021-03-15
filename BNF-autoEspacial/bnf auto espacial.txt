@@ -68,6 +68,11 @@
 <operadoresRelacionales>::-  = | <> | < | > | <= | >= | == 
 <SeleccionHecha>::- "1" | "0" | "Pasoderecha" | "Pasoizquirda"
 
+<direccion>::- si<selecciondedireccion>"==""1" | <selecciondedireccion>=="Pasoadelante"  entonces <tomarParametros> 
+<operadoresRelacionales>::-  = | <> | < | > | <= | >= | == 
+<SeleccionHecha>::- "1" | "0" | "pasoadelante" | "Pasoatras"
+
+
 
 
 
