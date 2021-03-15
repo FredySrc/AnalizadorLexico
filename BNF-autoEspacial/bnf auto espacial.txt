@@ -21,6 +21,7 @@
 <decimales>::-<signo><digito>' . '<digito>
 <caracter>::-'!'|'@'|'%'|'&'|'*'|'('|')'|'{'|'_'|'}'|'['|']'|':'|';'|'<'|'>'|'?'|<mayusculas>|<minusculas>
 
+
 <ruedas>::- <girar> | <avanza>  
 <girar>::- (<Booleano>)
 <Booleano>::- "1" | "0" | "derecha" | "izquierda" | <Operador><OperadorBool><Operando>
