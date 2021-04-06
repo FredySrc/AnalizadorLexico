@@ -1,0 +1,46 @@
+#include<iostream>
+#include<string>
+
+usando el  espacio de nombres  std ;
+bool ruedas ();
+bool gira ();
+bool adelante ();
+bool retrocede ();
+bool detenerse ();
+bool brazos ();
+bool camara (); 
+bool desplazamiento ();
+
+
+ char cadena[20];
+           int k, j, tam=0, agru=0, salida=0;
+           while(salida!=1){
+              cout<<"Ingrese una cadena. Al final de la cadena escriba--> _"<<endl;
+              for(j=0;j<20;j++){
+                 cin>>cadena[j];
+                 if(cadena[j]=='_'){
+                    k=j;
+                    j=20;
+                 }
+                 
+	              while(tam<k){
+                 /*validacion de las variable*/
+                 if((cadena[tam]=='a')||(cadena[tam]=='b')||(cadena[tam]=='c')||(cadena[tam]=='d')||(cadena[tam]=='e')||(cadena[tam]=='f')||(cadena[tam]=='g')||(cadena[tam]=='h')||(cadena[tam]=='i')||(cadena[tam]=='j')||(cadena[tam]=='k')||(cadena[tam]=='l')||(cadena[tam]=='m')||(cadena[tam]=='n')||(cadena[tam]=='o')||(cadena[tam]=='p')||(cadena[tam]=='q')||(cadena[tam]=='r')||(cadena[tam]=='s')||(cadena[tam]=='t')||(cadena[tam]=='u')||(cadena[tam]=='v')||(cadena[tam]=='w')||(cadena[tam]=='x')||(cadena[tam]=='y')||(cadena[tam]=='z'))cout<<cadena[tam]<<": caracter"<<endl;
+                 /*validacion de la palabra reservada*/
+                 if(cadena[tam]=='W'){
+                    if(cadena[tam+1]=='H'){
+                       if(cadena[tam+2]=='I'){
+                          if(cadena[tam+3]=='L'){
+                             if(cadena[tam+4]=='E')cout<<cadena[tam]<<cadena[tam+1]<<cadena[tam+2]<<cadena[tam+3]<<cadena[tam+4]<<": ciclo_WHILE"<<endl;
+                          }
+                       }
+                    }
+                 }
+                 if(cadena[tam]=='F'){
+                    if(cadena[tam+1]=='O'){
+                       if(cadena[tam+2]=='R')cout<<cadena[tam]<<cadena[tam+1]<<cadena[tam+2]<<": ciclo_FOR"<<endl;
+                    }
+                 }
+                 
+                 
+                 

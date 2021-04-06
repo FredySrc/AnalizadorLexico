@@ -72,7 +72,13 @@
 <operadoresRelacionales>::-  = | <> | < | > | <= | >= | == 
 <SeleccionHecha>::- "1" | "0" | "pasoadelante" | "Pasoatras"
 
-
+<decision>::= si(<condicion>):<instruccion>|si(<condicion>):<instruccion> sino <instruccion>|
+si(<condicion>):<instruccion> sino <desicion>
+<condicion>::= <valor>|<valor><operador><valor>
+<ciclos>::=<ciclo_mient>|<ciclo_para>|<ciclo_hacer>
+<ciclo_mientras>::= mientras (<condicion>):<instruccion>
+<ciclo_hacer>::= hacer:<instruccion>mientras(<condicion>)
+<ciclo_para>::= para(<variable>;<condicion>;<expresión_decremental):<instruccion>| para(<variable>;<condicion>;<expresion_incremental):<instruccion>
 
 
 
