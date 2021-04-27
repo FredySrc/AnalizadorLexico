@@ -1,0 +1,4 @@
+camara 1
+desplazamiento a
+ruedas 1
+brazos 1
